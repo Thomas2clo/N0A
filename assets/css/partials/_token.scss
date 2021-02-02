@@ -1,0 +1,51 @@
+.ff {
+  &__antartica {
+    @extend %antartica;
+  }
+
+  &__lincoln {
+    @extend %lincoln;
+  }
+}
+
+.fw {
+  &__regular {
+    font-weight: normal;
+  }
+  //   &__medium {
+  //     font-weight: 500;
+  //   }
+  //   &__bold {
+  //     font-weight: bold;
+  //   }
+  //   &__extraBold {
+  //     font-weight: 800;
+  //   }
+  &__black {
+    font-weight: 900;
+  }
+}
+
+.fs {
+  &__sm {
+    @extend %fs-sm;
+  }
+  &__md {
+    @extend %fs-md;
+  }
+  &__lg {
+    @extend %fs-lg;
+  }
+}
+
+.ta {
+  &__left {
+    text-align: left;
+  }
+  &__center {
+    text-align: center;
+  }
+  &__right {
+    text-align: right;
+  }
+}

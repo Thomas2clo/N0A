@@ -1,0 +1,126 @@
+:root {
+  // Colors
+  --dark: #000;
+  --light: #fff;
+
+  --dark-90: rgba(0, 0, 0, 0.9);
+  --dark-70: rgba(0, 0, 0, 0.7);
+  --dark-50: rgba(0, 0, 0, 0.5);
+  --dark-20: rgba(0, 0, 0, 0.2);
+
+  // Typography
+  %antartica {
+    font-family: "Antarctica", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+  }
+  %lincoln {
+    font-family: "Lincoln", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+  }
+
+  // Font Sizes
+  %fs-sm {
+    font-size: 20px !important;
+    line-height: 24px !important;
+  }
+  %fs-md {
+    font-size: 26px !important;
+    line-height: 26px !important;
+  }
+  %fs-lg {
+    font-size: 40px !important;
+    line-height: 40px !important;
+  }
+}
+
+// General
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+  display: none;
+}
+::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  color: var(--dark);
+  background-color: var(--light);
+
+  @extend %antartica;
+  @extend %fs-md;
+
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  #wrapper {
+    padding: 24px 30px;
+
+    @media screen and (max-width: 768px) {
+      padding: 24px 18px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: inherit;
+      letter-spacing: inherit;
+      font-style: inherit;
+      font-variant: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+      display: inline-block;
+    }
+
+    a {
+      color: var(--dark);
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: var(--dark-20);
+      }
+
+      -webkit-transition: color 300ms ease-out;
+      -moz-transition: color 300ms ease-out;
+      -o-transition: color 300ms ease-out;
+      transition: color 300ms ease-out;
+    }
+  }
+}
