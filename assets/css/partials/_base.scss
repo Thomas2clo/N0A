@@ -20,16 +20,16 @@
 
   // Font Sizes
   %fs-sm {
-    font-size: 20px !important;
-    line-height: 24px !important;
+    font-size: 18px !important;
+    line-height: 20px !important;
   }
   %fs-md {
     font-size: 26px !important;
     line-height: 26px !important;
 
     @media screen and (max-width: 768px) {
-      font-size: 20px !important;
-      line-height: 24px !important;
+      font-size: 18px !important;
+      line-height: 20px !important;
     }
   }
   %fs-lg {

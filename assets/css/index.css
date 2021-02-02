@@ -553,8 +553,8 @@ textarea {
 }
 
 :root .fs__sm {
-  font-size: 20px !important;
-  line-height: 24px !important;
+  font-size: 18px !important;
+  line-height: 20px !important;
 }
 
 :root body, :root .fs__md {
@@ -564,8 +564,8 @@ textarea {
 
 @media screen and (max-width: 768px) {
   :root body, :root .fs__md {
-    font-size: 20px !important;
-    line-height: 24px !important;
+    font-size: 18px !important;
+    line-height: 20px !important;
   }
 }
 
