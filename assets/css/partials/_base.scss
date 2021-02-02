@@ -26,6 +26,11 @@
   %fs-md {
     font-size: 26px !important;
     line-height: 26px !important;
+
+    @media screen and (max-width: 768px) {
+      font-size: 20px !important;
+      line-height: 24px !important;
+    }
   }
   %fs-lg {
     font-size: 40px !important;

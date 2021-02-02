@@ -562,6 +562,13 @@ textarea {
   line-height: 26px !important;
 }
 
+@media screen and (max-width: 768px) {
+  :root body, :root .fs__md {
+    font-size: 20px !important;
+    line-height: 24px !important;
+  }
+}
+
 :root .fs__lg {
   font-size: 40px !important;
   line-height: 40px !important;
